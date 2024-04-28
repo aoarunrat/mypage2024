@@ -2,3 +2,21 @@ th {
     background-color: #04AA6D;
     color: white;
   }
+
+body    {
+    background-color: powderblue;
+    }
+hr       {
+    border: none;
+    border-style:none;
+      border: grey;
+      border: 5px;
+      width: 30%;
+    }
+img{
+      border-radius: 50%;
+  }
+
+emoji-presentation {
+    font-variant-emoji: 2B50;
+  }
