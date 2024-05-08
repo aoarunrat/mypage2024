@@ -1,82 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARUNRAT  TAROS</title>
-    <link rel="stylesheet" href="styles.css">
-   <!-- <style>
- 
-
-    </style>-->
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+   <link rel="stylesheet" href="styles.css">
+   
 </head>
 <body>
    <center><table cellspacing="20">
-        <tr>
-          <td><img src="profile.jpg" alt="chanakarn kingkaew image of japan" width="250" height="250"></td>
-          <td> <certer><h1>My name is ARUNRAT  TAROS</h1></certer>   
-              <center><p><em>สาขาคอมพิวเตอร์ธุรกิจ</em></p></center>
-            <center><p>แผนกพาณิชยกรรม</p></center>
-              <p><strong><ul>
-                <ol><a href="https://rtls.rakthai.ac.th/"> วิทยาาลัยเทคโนโลยีบริหารธุรกิจรักไทย ละหานทราย</a></ol>
-               
-            </ul></strong></p></td>
-        </tr>
-      </table></center> 
-  
-    <!--<img src = "profile.jpg" alt="" style="width: 20%; height: 20%;">
-    <h1 style="background-color: blue;"> Arunrat  Taros </h1> 
-    <a href="https://rtls.rakthai.ac.th/">ไปยังเว็ปไซต์วิทยาลัยฯ</a>
-    <br>
-    <a href="contact.html">Contact</a>
+      <thead>
+          <tr>
+              <th>
+               <p>คุณสามารถเลื่อนไปยังข้อถัดไปโดยคลิกที่ลิ้งค์:</p>
+              </th>
+              <th>
+               <a href="question.html">ถัดไป</a>
+              </th>
+          </tr>
+      </thead>
+     
+   <div class="quiz-container">
+       <h1></h1>
+       <p id="question">PIM ย่อมาจากอะไร ?</p>
+       <button class="button" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
+       <button class="button" onclick="checkAnswer('b')">B) ปิ๋ม</button>
+       <button class="button" onclick="checkAnswer('c')">C) พิม</button>
+       <button class="button" onclick="checkAnswer('d')">D) ภีม</button>
+       <p id="result"></p>
+   </div>
 
-    <hr style="border-style: dotted double none; height: 20px;">-->
 
-    <!-- ทำให้ list นำเสนือออกเป็น table -->
-    <center><table cellspacing="20">
-        <thead>
-            <tr>
-                <th>
-                    Year
-                </th>
-                <th>
-                    Work Place
-                </th>
-            </tr>
-        </thead>
-        <tr>
-            <td>2024-present</td>
-            <td>Tesla Company</td>
-        </tr>
-        <tr>
-            <td>2022-2024</td>
-            <td>Cpram</td>
-        </tr>
-        <tr>
-            <td>2010-2022</td>
-            <td>วิทยาาลัยเทคโนโลยีบริหารธุรกิจรักไทย ละหานทราย</td>
-        </tr>
-        <tr>
-            <td>2000-2010</td>
-            <td>Thai Herbal</td>
-        </tr>
-    </table></center>
-    <h3>skills</h3>
-        <table cellspacing="20">
-        <thead>
-            <tr>
-            <td>HTML</td>
-            <td><p style="font-size: 20px;">&#11088&#11088&#11088&#11088</p></td>
-        </tr>
-        <tr>
-            <td>css</td>
-            <td><p style="font-size: 20px;">&#11088&#11088&#11088</p></td>
-        </tr>
-        <tr>
-            <td>sql</td>
-            <td>&#11088</td>
-        </tr>
-     </table>
+   
+ 
+
+  <!-- <div class="quiz-container">
+      <h1></h1>
+      <p id="question">วิทยาาลัยเทคโนโลยีบริหารธุรกิจรักไทย มีจำนวนสาขาทั้งหมดกี่สาขา ?</p>
+      <button class="button" onclick="checkAnswer('a')">A) 12 สาขา</button>
+      <button class="button" onclick="checkAnswer('b')">B) 11 สาขา</button>
+      <button class="button" onclick="checkAnswer('c')">C) 14 สาขา</button>
+      <button class="button" onclick="checkAnswer('d')">D) 13 สาขา</button>
+      <p id="result"></p>
+  </div>-->
+
+   <script src="index.js" charset="utf-8"></script>
 </body>
 </html>
